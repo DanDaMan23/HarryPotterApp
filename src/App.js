@@ -1,11 +1,10 @@
-import "./App.css"
+import HomepageRoutes from "./features/homepage/homepage.routes"
 
-function App() {
+export default function App() {
   return (
     <div className='App'>
       <div className='box'>Harry Potter App</div>
+      <HomepageRoutes />
     </div>
   )
 }
-
-export default App
