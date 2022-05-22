@@ -8,8 +8,11 @@ export default function Members({ member }) {
   return (
     <>
       <div>Members</div>
-      {houseState.data &&
-        houseState.data.map((member) => <MemberCard member={member} />)}
+      <br />
+      <div className='is-flex is-flex-wrap-wrap is-justify-content-space-around columns'>
+        {houseState.data &&
+          houseState.data.map((member) => <MemberCard member={member} />)}
+      </div>
     </>
   )
 }

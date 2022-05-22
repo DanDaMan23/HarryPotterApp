@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export default function MemberCard({ member }) {
   return (
-    <div className='card'>
+    <div className='card column is-one-quarter m-2'>
       <div className='card-image'>
         <figure className='image is-4by3'>
           <img src={member.image} alt={member.name} />
