@@ -12,7 +12,7 @@ export default function HousesCard({ house }) {
       <button
         className='button card-button'
         onClick={() => {
-          navigate(house)
+          navigate(house, { state: { name: house } })
         }}
       >
         <figure className='image is-128x128'>
