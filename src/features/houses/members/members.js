@@ -1,12 +1,15 @@
 import React, { useContext } from "react"
 import { HouseContext } from "../house.context"
+import MemberCard from "./components/member.card.component"
 
-export default function Members() {
+export default function Members({ member }) {
   const { houseState } = useContext(HouseContext)
 
-  console.log(houseState)
-
-
-
-  return <div>Members</div>
+  return (
+    <>
+      <div>Members</div>
+      {houseState.data &&
+        houseState.data.map((member) => <MemberCard member={member} />)}
+    </>
+  )
 }
