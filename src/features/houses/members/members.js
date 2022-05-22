@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { HouseContext } from "../house.context"
 import MemberCard from "./components/member.card.component"
 
-export default function Members({ member }) {
+export default function Members() {
   const { houseState } = useContext(HouseContext)
 
   return (
