@@ -1,4 +1,6 @@
+import { useContext } from "react"
 import HomepageRoutes from "./features/homepage/homepage.routes"
+// import HouseContext from "./features/houses/house.context"
 // import useAxios from "./helpers/use-axios"
 
 export default function App() {
@@ -11,6 +13,8 @@ export default function App() {
   // }
 
   // x()
+
+  // console.log(house)
 
   return (
     <div className='App'>
