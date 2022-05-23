@@ -8,7 +8,7 @@ export default function HousesCard({ house }) {
   const navigate = useNavigate()
 
   return (
-    <div className='column is-half'>
+    <div className='column is-one-quarter'>
       <button
         className='button card-button'
         onClick={() => {
